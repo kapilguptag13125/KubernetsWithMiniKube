@@ -1,0 +1,24 @@
+kubectl get pod
+kubectl get configmap
+kubectl get service
+kubectl describe pod mongo-express-85d8576d55-c6tpf
+kubectl logs mongodb-deployment-59b9ffd45d-lbdtz
+mongodb
+mongodb://mongo:mongo@10.98.59.39:27017
+kubectl exec -it mongodb-deployment-59b9ffd45d-lbdtz -- bin/bash
+kubectl logs mongo-express-75bb9cf47c-54cm9
+kubectl delete -f mongodb-deployment.yaml
+kubectl apply -f mongodb-deployment.yaml
+kubectl get services
+kubectl get secrets
+kubectl get pods -o wide
+kubectl logs mongo-express-77d8f87556-wjpv4
+kubectl delete -f mongoexpress-deployment.yaml
+kubectl apply -f mongoexpress-deployment.yaml
+minikube service mongo-express-service
+doskey /history > command_history.txt
+
+
+
+base 64 from git bash
+$ echo -n 'Hello, World!' | base64
